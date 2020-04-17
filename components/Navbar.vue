@@ -5,7 +5,7 @@
         <nuxt-link to="/">
           <img src="~/assets/dos-logo.svg" class="dos-icon" alt>
         </nuxt-link>
-        <img src="~/assets/der-logo-white-alt.svg" class="der-icon" alt>
+        <!-- <img src="~/assets/der-logo-white-alt.svg" class="der-icon" alt> -->
       </div>
       <div class="text-container">
         <p class="has-text-right is-size-7">
