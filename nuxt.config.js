@@ -70,7 +70,18 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    ['nuxt-env', {
+      keys: [
+        { key: 'GOOGLE_API_KEY', name: 'googleApiKey', secret: true },
+        { key: 'GOOGLE_SHEET_ID', name: 'googleSheetId' },
+        { key: 'MAPBOX_API_KEY', name: 'mapboxApiKey' },
+        { key: 'MAPBOX_MAP_STYLE', name: 'mapboxMapStyle' },
+        { key: 'MAP_CENTER_LATITUDE', name: 'mapCenterLatitude' },
+        { key: 'MAP_CENTER_LONGITUDE', name: 'mapCenterLongitude' },
+        { key: 'MAP_ZOOM_DEFAULT', name: 'mapZoomDefault' }
+      ]
+    }]
   ],
   serverMiddleware: [
     '~/api/sheets.js'

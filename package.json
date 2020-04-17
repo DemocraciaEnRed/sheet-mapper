@@ -22,7 +22,8 @@
     "google-spreadsheet": "^3.0.11",
     "mapbox-gl-vue": "^2.0.4",
     "nuxt": "^2.0.0",
-    "nuxt-buefy": "^0.3.2"
+    "nuxt-buefy": "^0.3.2",
+    "nuxt-env": "^0.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",

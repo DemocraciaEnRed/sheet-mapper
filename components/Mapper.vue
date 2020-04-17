@@ -18,15 +18,15 @@ export default {
   data () {
     return {
       mapboxOptions: {
-        style: process.env.mapboxMapStyle,
-        center: [process.env.mapCenterLongitude, process.env.mapCenterLatitude],
-        zoom: process.env.mapZoomDefault
+        style: this.$env.mapboxMapStyle,
+        center: [this.$env.mapCenterLongitude, this.$env.mapCenterLatitude],
+        zoom: this.$env.mapZoomDefault
       }
     }
   },
   computed: {
     mapboxApiKey () {
-      return process.env.mapboxApiKey
+      return this.$env.mapboxApiKey
     },
     sheetData () {
       return this.$store.state.sheet.data
