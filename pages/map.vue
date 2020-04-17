@@ -19,7 +19,7 @@ export default {
     Footer
   },
   asyncData ({ app, params, store }) {
-    return app.$axios.get('/api/sheets')
+    return app.$axios.get(`${app.$env.baseUrl}/api/sheets`)
       .then((res) => {
         store.commit('sheet/commit', res.data)
       })

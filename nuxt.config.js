@@ -26,7 +26,7 @@ module.exports = {
   ** Enviroment variables for the client
   */
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    baseUrl: process.env.BASE_URL || 'http://caca:3000',
     googleSheetId: process.env.GOOGLE_SHEET_ID || '',
     mapboxApiKey: process.env.MAPBOX_API_KEY || '',
     mapboxMapStyle: process.env.MAPBOX_MAP_STYLE || '',
@@ -69,6 +69,7 @@ module.exports = {
     '@nuxtjs/dotenv',
     ['nuxt-env', {
       keys: [
+        { key: 'BASE_URL', name: 'baseUrl' },
         { key: 'GOOGLE_API_KEY', name: 'googleApiKey', secret: true },
         { key: 'GOOGLE_SHEET_ID', name: 'googleSheetId' },
         { key: 'MAPBOX_API_KEY', name: 'mapboxApiKey' },
@@ -87,6 +88,7 @@ module.exports = {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseUrl: process.env.baseUrl
   },
   /*
   ** Google Analytics configuration
