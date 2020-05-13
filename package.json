@@ -13,7 +13,7 @@
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/axios": "^5.10.3",
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/google-analytics": "^2.2.3",
     "cross-env": "^5.2.0",
@@ -22,16 +22,16 @@
     "google-spreadsheet": "^3.0.11",
     "mapbox-gl-vue": "^2.0.4",
     "nuxt": "^2.0.0",
-    "nuxt-buefy": "^0.3.2",
+    "nuxt-buefy": "^0.3.29",
     "nuxt-env": "^0.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
-    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/eslint-module": "^1.2.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
-    "eslint-plugin-nuxt": ">=0.4.2",
-    "node-sass": "^4.13.1",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "node-sass": "^4.14.1",
     "nodemon": "^1.18.9",
     "sass-loader": "^8.0.2"
   }
