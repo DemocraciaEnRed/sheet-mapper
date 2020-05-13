@@ -36,9 +36,11 @@
   color: #fff;
   margin: 0;
   display: block;
-  padding: 15px;
+  padding: 8px 10px;
   font-weight: 700;
   margin-top: -5px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .mapboxgl-popup-content h4 {
