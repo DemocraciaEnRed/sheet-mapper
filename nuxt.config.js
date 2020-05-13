@@ -26,7 +26,7 @@ module.exports = {
   ** Enviroment variables for the client
   */
   env: {
-    baseUrl: process.env.BASE_URL || 'http://caca:3000',
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
     googleSheetId: process.env.GOOGLE_SHEET_ID || '',
     mapboxApiKey: process.env.MAPBOX_API_KEY || '',
     mapboxMapStyle: process.env.MAPBOX_MAP_STYLE || '',

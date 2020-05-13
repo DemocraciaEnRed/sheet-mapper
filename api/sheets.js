@@ -22,7 +22,7 @@ app.get('/', async (req, res) => {
     res.json({ title: doc.title, headers: doc.sheetsByIndex[0].headerValues, rows: stuff })
   } catch (err) {
     res.status(500).json({
-      message: 'Error :('
+      message: err.response.data.error
     })
   }
 })
