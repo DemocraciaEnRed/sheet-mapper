@@ -30,6 +30,14 @@ export default {
     },
     sheetData () {
       return this.$store.state.sheet.data
+    },
+    extraHeaders () {
+      if (!this.sheetData) { return [] }
+      const noExtra = ['title', 'latitude', 'longitude', 'color']
+      const extraHeaders = this.sheetData.headers.filter((x) => {
+        return !noExtra.includes(x)
+      })
+      return extraHeaders
     }
   },
   methods: {
@@ -38,10 +46,16 @@ export default {
     },
     addPoints (map) {
       // iterate through your table to set the marker to lat/long values for each row
-      this.sheetData.rows.forEach(function (row) {
-      // create a variable for your popup for the current event
-        const popup = new mapboxgl.Popup()
-          .setHTML('<h3>' + row.where + '</h3>' + '<h4>' + '<b>' + 'What is this?: ' + '</b><br/>' + row.description + '</h4>') // use the table to populate your popup with text
+      this.sheetData.rows.forEach((row) => {
+        // Create the Title
+        let str = `<h3>${row.title}</h3>`
+        str += '<h4>'
+        this.extraHeaders.forEach((header) => {
+          str += `<p><b>${header}</b><br/>${row[header] || '<i>- No Data -</i>'}</p>`
+        })
+        str += '</h4>'
+        // create a variable for your popup for the current event
+        const popup = new mapboxgl.Popup().setHTML(str) // use the table to populate your popup with text
 
         // create a variable for your markup and add it to the map
         new mapboxgl.Marker({
@@ -65,5 +79,4 @@ export default {
 .mapboxgl-map {
   height: 100%;
 }
-
 </style>

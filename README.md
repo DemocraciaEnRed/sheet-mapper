@@ -1,6 +1,6 @@
-# Google Sheet + Mapbox Mapper
+# Sheet Mapper
 
-> NuxtJS (VueJS 2.x) with Mapbox and Google Sheet
+> Make simple maps with simple spreadsheets. A NuxtJS (VueJS 2.x) project, with the Mapbox technology, Google Sheet API. Done by DemocraciaOS
 
 ## How it works
 
