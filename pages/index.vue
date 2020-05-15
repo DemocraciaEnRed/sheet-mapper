@@ -25,7 +25,15 @@
                 :href="`https://docs.google.com/spreadsheets/d/${sheetId}`"
                 target="_blank"
                 class="has-text-white"
-              >Open the example sheet&nbsp;<i class="fas fa-external-link-alt" /></a>
+              >Open the example sheet&nbsp;<i class="fas fa-external-link-alt fa-fw" /></a>
+            </p>
+            <p class="is-size-7">
+              <a
+                href="https://github.com/DemocraciaEnRed/sheet-mapper"
+                target="_blank"
+                class="has-text-white"
+              >Check the code in <i class="fab fa-github fa-fw" /> Github &nbsp;<i class="fas fa-external-link-alt fa-fw" />
+              </a>
             </p>
             <br>
             <br>
