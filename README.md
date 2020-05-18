@@ -1,8 +1,10 @@
+![Sheet Mapper Logo](/docs/repo-logo.png)
+
 # Sheet Mapper
 
 > Make simple maps with simple spreadsheets. A NuxtJS (VueJS 2.x) project, with the Mapbox technology, Google Sheet API. Done by DemocraciaOS
 
-- Created & mainly maintained by @guillecro from Democracia en Red
+- Created & mainly maintained by [@guillecro](https://github.com/guillecro) from Democracia en Red
 
 ## How it works
 
@@ -96,7 +98,7 @@ There are two ways to do it
 
 ### The classic way
 
-Copy your code to your server, execute the build, and launch the server. That's it. No need to do anything else.
+Copy your code to your server, create the `.env` file for production, and execute the build, and launch the server. That's it. No need to do anything else.
 
 ```
 # build for production and launch server
