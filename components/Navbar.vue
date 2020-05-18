@@ -10,7 +10,7 @@
       <div class="text-container">
         <p class="has-text-right is-size-7">
           Sheet: {{ sheetData.title }}&nbsp;&nbsp;
-          <a href target="_blank" class="has-text-white">
+          <a :href="`https://docs.google.com/spreadsheets/d/${sheetId}`" target="_blank" class="has-text-white">
             <i class="fas fa-external-link-alt" />
           </a>
         </p>
