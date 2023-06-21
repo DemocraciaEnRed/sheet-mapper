@@ -21,7 +21,7 @@
     "express": "^4.16.4",
     "google-spreadsheet": "^3.0.11",
     "mapbox-gl-vue": "^2.0.4",
-    "nuxt": "^2.0.0",
+    "nuxt": "^3.4.3",
     "nuxt-buefy": "^0.3.29",
     "nuxt-env": "^0.1.0"
   },
